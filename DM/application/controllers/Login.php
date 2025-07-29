@@ -9,7 +9,7 @@ class Login extends APP_Controller {
         // se piden los datos que se ingresaron en la view login
         $usuario = $this->input->post('iniciarUser');
         $password = $this->input->post('iniciarPass');
-        debug($usuario,$password);
+        // debug($usuario,$password);
         // die;
         // se coje el usuario y se envia el modelo
         $query = $this->User->dregistro($usuario);
